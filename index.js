@@ -25,9 +25,7 @@ app.use("/countcoordinator", countCoordinatorRouter);
 
 // Variable Declarations
 let PORT = process.env.PORT;
-
-let URI =
-  "mongodb+srv://abioladave24:Dynamind2494@cluster0.ksltamd.mongodb.net/qrcounter_db?retryWrites=true&w=majority&appName=Cluster0";
+let URI = process.env.URI;
 
 mongoose
   .connect(URI)

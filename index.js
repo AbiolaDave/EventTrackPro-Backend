@@ -27,6 +27,7 @@ app.use("/countcoordinator", countCoordinatorRouter);
 let PORT = process.env.PORT;
 let URI = process.env.URI;
 
+// Connection
 mongoose
   .connect(URI)
   .then(() => {
